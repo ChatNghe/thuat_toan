@@ -1,6 +1,6 @@
-let arr = [1,2,3,4,5,6,7,8]
-let S = 0
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i]%2 ===0) S += i;
-}
-console.log(S)
+let N = 100
+let soLan
+if (N%9 === 0) soLan = N/9
+else soLan = Math.floor(N/9) + 1
+
+console.log(`Cần tối thiểu ${soLan} lần rán`)

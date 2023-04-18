@@ -1,6 +1,8 @@
-let N = 100
-let soLan
-if (N%9 === 0) soLan = N/9
-else soLan = Math.floor(N/9) + 1
-
-console.log(`Cần tối thiểu ${soLan} lần rán`)
+let N = 2
+let S = 3
+for (let i = 0; i <= N; i++) {
+    for (let j = 0; j <= S - i ; j++) {
+        let k = S - i - j
+        console.log(`(${i},${j},${k})`)
+    }
+}

@@ -1,6 +1,8 @@
-let arr = [1,2,3,4,5,6,7,8]
-let S = 0
-for (let i = 1; i < arr.length; i+=2) {
-    S += arr[i];
-}
-console.log(S)
+let soTien = 8000
+let a = Math.floor(soTien/5000)
+let b = Math.floor((soTien - a*5000)/2000)
+let c = (soTien - a*5000 - b*2000)/1000
+
+console.log(`Số tiền ${soTien} cần ${a} tờ 5000, ${b} tờ 2000, ${c} tờ 1000`)
+
+

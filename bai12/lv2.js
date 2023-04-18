@@ -1,8 +1,7 @@
-let x=2
-let S
-if (x >= 5){
-    S = 2*x*x + 5*x + 9
+let arr = [1,2,3,4,5,6,7]
+let sum = 0
+for (let i = 0; i < arr.length; i++) {
+    if(arr[i]%2 === 0)
+    sum+= i
 }
-else S = -2*x*x + 4*x - 9
-
-console.log(S)
+console.log(sum)

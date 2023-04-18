@@ -1,9 +1,8 @@
-let arr = [1,2,3,4]
-let sumOdd = 0
-let sumEven = 0
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i]%2 ===0) sumEven += arr[i];
-    else sumOdd += arr[i]
-}
-if (sumOdd>sumEven) console.log('Tổng lẻ lớn hơn')
-else console.log('Tổng chẵn lớn hơn')
+let soNgay = 400
+let a = Math.floor(soNgay/365)
+let b = Math.floor((soNgay - a*365)/30)
+let c = (soNgay - a*365 - b*30)
+
+console.log(`${a} nam`)
+console.log(`${b} thang`)
+console.log(`${c} ngay`)
